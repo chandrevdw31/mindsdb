@@ -8,11 +8,10 @@
       
       
       
-      
         <link rel="canonical" href="https://docs.mindsdb.com/sql/api/select/">
       
       <link rel="icon" href="../../../assets/mdb_logo.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.8">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.5">
     
     
       
@@ -20,10 +19,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.92558b1b.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ee0f47ba.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
@@ -33,13 +32,13 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
-    
     
     
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
 
 <!--iubenda privacy policy-->
@@ -74,9 +73,8 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
   
     
-    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
-      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -92,6 +90,7 @@
     <div data-md-component="announce">
       
     </div>
+    
     
       <!--
   Copyright (c) 2016-2021 Martin Donath <martin.donath@squidfunk.com>
@@ -240,8 +239,7 @@
       </label>
 
       <!-- Search interface -->
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -277,8 +275,7 @@
     <!-- Repository information -->
     
       <div class="md-header__source">
-        
-<a href="https://github.com/mindsdb/mindsdb/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/mindsdb/mindsdb/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
@@ -298,6 +295,8 @@
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -322,8 +321,7 @@
   </label>
   
     <div class="md-nav__source">
-      
-<a href="https://github.com/mindsdb/mindsdb/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/mindsdb/mindsdb/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
@@ -364,10 +362,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
-      <label class="md-nav__link" for="__nav_2">
-        Getting Started Guide
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Getting Started Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Getting Started Guide" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
@@ -376,6 +378,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -386,8 +389,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -398,8 +403,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -410,8 +417,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -422,6 +431,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -457,10 +467,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
-      <label class="md-nav__link" for="__nav_4">
-        Connect to MindsDB SQL Server
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Connect to MindsDB SQL Server
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Connect to MindsDB SQL Server" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
@@ -469,6 +483,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -479,8 +494,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -491,6 +508,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -513,10 +531,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
-      <label class="md-nav__link" for="__nav_5">
-        SQL
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          SQL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="SQL" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
@@ -525,6 +547,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -535,8 +558,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -546,10 +571,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
       
-      <label class="md-nav__link" for="__nav_5_2">
-        CREATE
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_2">
+          CREATE
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="CREATE" data-md-level="2">
         <label class="md-nav__title" for="__nav_5_2">
           <span class="md-nav__icon md-icon"></span>
@@ -558,6 +587,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -568,8 +598,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -580,14 +612,31 @@
     </li>
   
 
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using.md" class="md-nav__link">
+        USING
+      </a>
+    </li>
+  
+
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -598,8 +647,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -610,8 +661,10 @@
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -635,6 +688,7 @@
       </a>
       
         
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -669,8 +723,24 @@
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SELECT_Files/" class="md-nav__link">
+        SELECT from FILES
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -681,6 +751,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -701,10 +772,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
-      <label class="md-nav__link" for="__nav_6">
-        Tutorials
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Tutorials
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
@@ -713,18 +788,35 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/byom/" class="md-nav__link">
+        Bring Your Own Model
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
     <li class="md-nav__item">
       <a href="../../tutorials/ai-tables/" class="md-nav__link">
-        AI Tables intro
+        AI Tables Intro
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -732,20 +824,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
       
-      <label class="md-nav__link" for="__nav_6_2">
-        Regression
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_3">
+          Regression
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Regression" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_2">
+        <label class="md-nav__title" for="__nav_6_3">
           <span class="md-nav__icon md-icon"></span>
           Regression
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -756,20 +853,24 @@
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
       <a href="../../tutorials/bodyfat/" class="md-nav__link">
-        Bodyfat Prediction
+        Body Fat Prediction
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -780,14 +881,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -795,32 +899,39 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
       
-      <label class="md-nav__link" for="__nav_6_3">
-        Classification
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_4">
+          Classification
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Classification" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_3">
+        <label class="md-nav__title" for="__nav_6_4">
           <span class="md-nav__icon md-icon"></span>
           Classification
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
       <a href="../../tutorials/crop-prediction/" class="md-nav__link">
-        Crop Recomendation
+        Crop Recommendation
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -831,8 +942,24 @@
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/diabetes/" class="md-nav__link">
+        Diabetes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -843,14 +970,31 @@
     </li>
   
 
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/mushrooms/" class="md-nav__link">
+        Mushrooms
+      </a>
+    </li>
+  
+
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -858,20 +1002,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
       
-      <label class="md-nav__link" for="__nav_6_4">
-        Time series
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_5">
+          Time series
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Time series" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_4">
+        <label class="md-nav__title" for="__nav_6_5">
           <span class="md-nav__icon md-icon"></span>
           Time series
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -882,12 +1031,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -908,10 +1059,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
-      <label class="md-nav__link" for="__nav_7">
-        Contribution and Community
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Contribution and Community
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Contribution and Community" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
@@ -920,6 +1075,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -930,8 +1086,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -942,8 +1100,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -954,6 +1114,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -973,6 +1134,7 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -1012,15 +1174,15 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mindsdb/mindsdb/edit/master/docs/sql/api/select.md" title="Edit this page" class="md-content__button md-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
-                  </a>
-                
-                
-                <h1 id="select-statement">SELECT statement</h1>
+<a href="https://github.com/mindsdb/mindsdb/edit/master/docs/sql/api/select.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+<h1 id="select-statement">SELECT statement</h1>
 <p>The <code>SELECT</code> statement is used to get a predictions from the model table. The data is not persistent and is returned on the fly as a result-set. The basic syntax for selecting from the model is:</p>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span> <span class="n">target_variable</span><span class="p">,</span> <span class="n">target_variable_explain</span> <span class="k">FROM</span> <span class="n">model_table</span> 
-                                                <span class="k">WHERE</span> <span class="n">when_data</span><span class="o">=</span><span class="s1">&#39;{&quot;column3&quot;: &quot;value&quot;, &quot;column2&quot;: &quot;value&quot;}&#39;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">target_variable</span><span class="p">,</span><span class="w"> </span><span class="n">target_variable_explain</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">model_table</span><span class="w"> </span>
+<span class="w">                                                </span><span class="k">WHERE</span><span class="w"> </span><span class="n">column3</span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;value&quot;</span><span class="w"> </span><span class="k">AND</span><span class="w">  </span><span class="n">column2</span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;value&quot;</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <h2 id="model-table-columns">Model table columns</h2>
 <p>The below list contains the column names of the model table. Note that <code>target_variable_</code> will be the name of the target variable column.</p>
@@ -1030,9 +1192,7 @@
 <li>target_variable_max - Upper bound of the predicted value.</li>
 <li>target_variable_confidence - Model confidence score.</li>
 <li>target_variable_explain - JSON object that contains additional information as <code>confidence_lower_bound</code>, <code>confidence_upper_bound</code>, <code>anomaly</code>, <code>truth</code>.</li>
-<li>when_data - The data to make the predictions from(WHERE clause params).</li>
 <li>select_data_query - SQL select query to create the datasource.</li>
-<li>external_datasource - Name of the pre-existing datasource that the model was built from.</li>
 </ul>
 <table>
 <thead>
@@ -1079,25 +1239,20 @@
 <h2 id="select-example">SELECT example</h2>
 <p>The following SQL statement selects all information from the <code>home_rentals_model</code> for the property that has "sqft": 800, "number_of_rooms": 4, "number_of_bathrooms": 2,
 "location": "good", "days_on_market" : 12, "neighborhood": "downtown", "initial_price": "2222".</p>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">mindsdb</span><span class="p">.</span><span class="n">home_rentals_model</span> 
-<span class="k">WHERE</span> <span class="n">when_data</span><span class="o">=</span><span class="s1">&#39;{&quot;sqft&quot;: 800, &quot;number_of_rooms&quot;: 4, &quot;number_of_bathrooms&quot;: 2,</span>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">home_rentals_model</span><span class="w"> </span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">when_data</span><span class="o">=</span><span class="s1">&#39;{&quot;sqft&quot;: 800, &quot;number_of_rooms&quot;: 4, &quot;number_of_bathrooms&quot;: 2,</span>
 <span class="s1">                  &quot;location&quot;: &quot;good&quot;, &quot;days_on_market&quot; : 12, </span>
-<span class="s1">                  &quot;neighborhood&quot;: &quot;downtown&quot;, &quot;initial_price&quot;: &quot;2222&quot;}&#39;</span><span class="p">;</span>
+<span class="s1">                  &quot;neighborhood&quot;: &quot;downtown&quot;, &quot;initial_price&quot;: &quot;2222&quot;}&#39;</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p><img alt="SELECT model_name" src="/assets/sql/select_hr.png" /></p>
 <p>The following SQL statement selects only the target variable <code>rental_price</code> as <code>price</code> and the <code>home_rentals_model</code> confidence as <code>accuracy</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span> <span class="n">rental_price</span> <span class="k">as</span> <span class="n">price</span><span class="p">,</span> 
-<span class="n">rental_price_confidence</span> <span class="k">as</span> <span class="n">confidence</span> 
-<span class="k">FROM</span> <span class="n">mindsdb</span><span class="p">.</span><span class="n">home_rentals_model</span> <span class="k">WHERE</span> <span class="n">when_data</span><span class="o">=</span><span class="s1">&#39;{&quot;sqft&quot;: 800, &quot;number_of_rooms&quot;: 4, &quot;number_of_bathrooms&quot;: 2, </span>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">rental_price</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">price</span><span class="p">,</span><span class="w"> </span>
+<span class="n">rental_price_confidence</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">confidence</span><span class="w"> </span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">home_rentals_model</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">when_data</span><span class="o">=</span><span class="s1">&#39;{&quot;sqft&quot;: 800, &quot;number_of_rooms&quot;: 4, &quot;number_of_bathrooms&quot;: 2, </span>
 <span class="s1">                                            &quot;location&quot;: &quot;good&quot;, &quot;days_on_market&quot; : 12,  </span>
-<span class="s1">                                            &quot;neighborhood&quot;: &quot;downtown&quot;, &quot;initial_price&quot;: &quot;2222&quot;}&#39;</span><span class="p">;</span>
+<span class="s1">                                            &quot;neighborhood&quot;: &quot;downtown&quot;, &quot;initial_price&quot;: &quot;2222&quot;}&#39;</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p><img alt="SELECT model_name" src="/assets/sql/select_hra.png" /></p>
-                
-              
-              
-                
-
 
               
             </article>
@@ -1112,10 +1267,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["search.suggest", "search.highlight", "header.autohide"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.94ec81fe.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["search.suggest", "search.highlight", "header.autohide"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.b6ff8c07.min.js"}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.48dfec6c.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.5e13d264.min.js"></script>
       
     
   </body>

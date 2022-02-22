@@ -8,11 +8,10 @@
       
       
       
-      
         <link rel="canonical" href="https://docs.mindsdb.com/">
       
       <link rel="icon" href="assets/mdb_logo.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.8">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.5">
     
     
       
@@ -20,10 +19,10 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.92558b1b.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.ee0f47ba.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
@@ -33,13 +32,13 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
-    
     
     
       <link rel="stylesheet" href="stylesheets/extra.css">
     
+    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
 
 <!--iubenda privacy policy-->
@@ -74,9 +73,8 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
   
     
-    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
-      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -92,6 +90,7 @@
     <div data-md-component="announce">
       
     </div>
+    
     
       <!--
   Copyright (c) 2016-2021 Martin Donath <martin.donath@squidfunk.com>
@@ -240,8 +239,7 @@
       </label>
 
       <!-- Search interface -->
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -277,8 +275,7 @@
     <!-- Repository information -->
     
       <div class="md-header__source">
-        
-<a href="https://github.com/mindsdb/mindsdb/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/mindsdb/mindsdb/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
@@ -298,6 +295,8 @@
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -322,8 +321,7 @@
   </label>
   
     <div class="md-nav__source">
-      
-<a href="https://github.com/mindsdb/mindsdb/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/mindsdb/mindsdb/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
@@ -353,53 +351,9 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          What is MindsDB
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="." class="md-nav__link md-nav__link--active">
         What is MindsDB
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#the-vision" class="md-nav__link">
-    The Vision:
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#from-database-tables-to-machine-learning-models" class="md-nav__link">
-    From Database Tables to Machine Learning Models
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    Getting Started
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -418,10 +372,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
-      <label class="md-nav__link" for="__nav_2">
-        Getting Started Guide
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Getting Started Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Getting Started Guide" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
@@ -430,6 +388,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -440,8 +399,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -452,8 +413,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -464,8 +427,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -476,6 +441,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -511,10 +477,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
-      <label class="md-nav__link" for="__nav_4">
-        Connect to MindsDB SQL Server
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Connect to MindsDB SQL Server
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Connect to MindsDB SQL Server" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
@@ -523,6 +493,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -533,8 +504,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -545,6 +518,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -565,10 +539,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
-      <label class="md-nav__link" for="__nav_5">
-        SQL
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          SQL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="SQL" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
@@ -577,6 +555,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -587,8 +566,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -598,10 +579,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
       
-      <label class="md-nav__link" for="__nav_5_2">
-        CREATE
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_2">
+          CREATE
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="CREATE" data-md-level="2">
         <label class="md-nav__title" for="__nav_5_2">
           <span class="md-nav__icon md-icon"></span>
@@ -610,6 +595,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -620,8 +606,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -632,14 +620,31 @@
     </li>
   
 
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sql/api/using.md" class="md-nav__link">
+        USING
+      </a>
+    </li>
+  
+
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -650,8 +655,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -662,8 +669,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -674,8 +683,24 @@
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sql/api/SELECT_Files/" class="md-nav__link">
+        SELECT from FILES
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -686,6 +711,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -706,10 +732,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
-      <label class="md-nav__link" for="__nav_6">
-        Tutorials
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Tutorials
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
@@ -718,18 +748,35 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sql/tutorials/byom/" class="md-nav__link">
+        Bring Your Own Model
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
     <li class="md-nav__item">
       <a href="sql/tutorials/ai-tables/" class="md-nav__link">
-        AI Tables intro
+        AI Tables Intro
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -737,20 +784,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
       
-      <label class="md-nav__link" for="__nav_6_2">
-        Regression
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_3">
+          Regression
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Regression" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_2">
+        <label class="md-nav__title" for="__nav_6_3">
           <span class="md-nav__icon md-icon"></span>
           Regression
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -761,20 +813,24 @@
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
       <a href="sql/tutorials/bodyfat/" class="md-nav__link">
-        Bodyfat Prediction
+        Body Fat Prediction
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -785,14 +841,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -800,32 +859,39 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
       
-      <label class="md-nav__link" for="__nav_6_3">
-        Classification
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_4">
+          Classification
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Classification" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_3">
+        <label class="md-nav__title" for="__nav_6_4">
           <span class="md-nav__icon md-icon"></span>
           Classification
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
       <a href="sql/tutorials/crop-prediction/" class="md-nav__link">
-        Crop Recomendation
+        Crop Recommendation
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -836,8 +902,24 @@
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sql/tutorials/diabetes/" class="md-nav__link">
+        Diabetes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -848,14 +930,31 @@
     </li>
   
 
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sql/tutorials/mushrooms/" class="md-nav__link">
+        Mushrooms
+      </a>
+    </li>
+  
+
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -863,20 +962,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
       
-      <label class="md-nav__link" for="__nav_6_4">
-        Time series
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_5">
+          Time series
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Time series" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_4">
+        <label class="md-nav__title" for="__nav_6_5">
           <span class="md-nav__icon md-icon"></span>
           Time series
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -887,12 +991,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -913,10 +1019,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
-      <label class="md-nav__link" for="__nav_7">
-        Contribution and Community
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Contribution and Community
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Contribution and Community" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
@@ -925,6 +1035,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -935,8 +1046,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -947,8 +1060,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -959,6 +1074,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -978,41 +1094,13 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
     
   
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#the-vision" class="md-nav__link">
-    The Vision:
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#from-database-tables-to-machine-learning-models" class="md-nav__link">
-    From Database Tables to Machine Learning Models
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    Getting Started
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -1024,57 +1112,15 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mindsdb/mindsdb/edit/master/docs/index.md" title="Edit this page" class="md-content__button md-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
-                  </a>
-                
-                
-                <h1 id="what-is-mindsdb">What is MindsDB?</h1>
-<p>MindsDB enables advanced predictive capabilities directly in your Database. This puts sophisticated machine learning techniques into the hands of anyone who knows SQL (data analysts, developers and business intelligence users) without the need for a new tool or significant training. </p>
-<p>Data is the single most important ingredient in machine learning, and your data lives in a database. So why do machine learning anywhere else? </p>
-<p><img alt="Machine Learning in Database using SQL" src="/assets/mdb_image.png" /></p>
-<h2 id="the-vision">The Vision:</h2>
-<p><strong><em>A world where people use intelligent databases to make better data-driven decisions.</em></strong></p>
-<p>...and we believe the best way to make these decisions is to enable this capability within existing databases without the effort of creating a new one.</p>
-<p>(Despite the name we are not actually a database!)</p>
-<h2 id="from-database-tables-to-machine-learning-models">From Database Tables to Machine Learning Models</h2>
-<div class="admonition info">
-<p class="admonition-title">As a quick example, let's consider a database that stores the SqFt and Price of Home Rentals:</p>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span> <span class="n">sqft</span><span class="p">,</span> <span class="n">price</span> <span class="k">FROM</span> <span class="n">home_rentals_table</span><span class="p">;</span>
-</code></pre></div>
-<p><img alt="SQFT vs Price" src="/assets/info/sqft-price.png" /></p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">You query the database for information in this table and if your search criteria generates a match: you get results:</p>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span> <span class="n">sqft</span><span class="p">,</span> <span class="n">price</span> <span class="k">FROM</span> <span class="n">home_rentals_table</span> <span class="k">WHERE</span> <span class="n">sqft</span> <span class="o">=</span> <span class="mi">900</span><span class="p">;</span>
-</code></pre></div>
-<p><img alt="SELECT FROM Table" src="/assets/info/select.png" /></p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">If your search criteria do not generate a match - your results will be empty:</p>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span> <span class="n">sqft</span><span class="p">,</span> <span class="n">price</span> <span class="k">FROM</span> <span class="n">home_rentals_table</span> <span class="k">WHERE</span> <span class="n">sqft</span> <span class="o">=</span> <span class="mi">800</span><span class="p">;</span>
-</code></pre></div>
-<p><img alt="SELECT FROM Table No Results" src="/assets/info/selectm.png" /></p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">An ML model can be fitted to the data in the home rentals table.</p>
-<div class="highlight"><pre><span></span><code><span class="k">CREATE</span> <span class="n">PREDICTOR</span>  <span class="n">home_rentals_model</span> <span class="k">FROM</span> <span class="n">home_rentals_table</span> <span class="n">PREDICT</span> <span class="n">price</span><span class="p">;</span>   
-</code></pre></div>
-<p><img alt="Model" src="/assets/info/model.png" /></p>
-</div>
-<div class="admonition success">
-<p class="admonition-title">An ML model can provide approximate answers for searches where there is no exact match in the income table:</p>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span> <span class="n">sqft</span><span class="p">,</span> <span class="n">price</span> <span class="k">FROM</span> <span class="n">home_rentals_model</span> <span class="k">WHERE</span> <span class="n">sqft</span> <span class="o">=</span> <span class="mi">800</span><span class="p">;</span>
-</code></pre></div>
-<p><img alt="Query model" src="/assets/info/query.png" /></p>
-</div>
-<h2 id="getting-started">Getting Started</h2>
-<p>To start using MindsDB, check out our <a href="/info">Getting Started Guide</a></p>
-                
-              
-              
-                
+<a href="https://github.com/mindsdb/mindsdb/edit/master/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
 
+
+<h1 id="what-is-mindsdb">What is MindsDB?</h1>
+<p>Data is your single most important asset and your data lives in a database. By bringing machine learning to the database, MindsDB accelerates the speed of machine learning development.</p>
+<p>With MindsDB, you will easily build, train, optimize and deploy your models. Your predictions will be available via the queries you already use.</p>
+<p><img alt="Machine Learning in Database using SQL" src="/assets/what_is_mindsdb.png" /></p>
 
               
             </article>
@@ -1089,10 +1135,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": ["search.suggest", "search.highlight", "header.autohide"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.94ec81fe.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["search.suggest", "search.highlight", "header.autohide"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.b6ff8c07.min.js"}</script>
     
     
-      <script src="assets/javascripts/bundle.48dfec6c.min.js"></script>
+      <script src="assets/javascripts/bundle.5e13d264.min.js"></script>
       
     
   </body>
