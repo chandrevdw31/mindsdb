@@ -18,22 +18,51 @@ MindsDB abstracts ML models as virtual “AI Tables” in databases and you can 
 
 In this tutorial you will learn how to predict the quality of a mining process using **MindsDB**.
 
-## Upload a file
+## Database connection to MindsDB
 
-1. Fix headers: 
-   - `sed -e 's/ /_/g' -e 's/\(.*\)/\L\1/' -e 's/%_//g' MiningProcess_Flotation_Plant_Database.csv > fixed_headers.csv` (for Linux/Unix)
-   - edit headers manually: change `space` to `underscore`, upper case to lower case, remove `%` from headers (for Windows)
-2. Access MindsDB GUI either on cloud or local via URL 127.0.0.1:47334/.
-3. Select the `Add data` button or the plug icon on the left side bar.
-4. The page will navigate to the 'Select your data source' page. Select 'Files'.
-5. Under 'Import a file' select the tab 'Click here to browse local files' and select your data file.
-6. Once the file is uploaded 100%, provide a name for the data file that will be saved as a table.
-7. Select the button Save and Continue.
+Before connecting your database, please ensure that the dataset is cleaned up by fixing the headers:
+ - `sed -e 's/ /_/g' -e 's/\(.*\)/\L\1/' -e 's/%_//g' MiningProcess_Flotation_Plant_Database.csv > fixed_headers.csv` (for Linux/Unix)
+ -  Edit headers manually: change `space` to `underscore`, upper case to lower case, remove `%` from headers (for Windows)
 
-You can query the file that has been uploaded to see that the data does pull through.
+To establish a database connection we will access MindsDB's GUI. MindsDB has a SQL Editor on Cloud and local via the URL 127.0.0.1:47334/.
+
+First, we need to connect MindsDB to the database where the Process Quality data is stored:
+
+- Access MindsDB GUI on either cloud or the URL 127.0.0.1:47334/
+- On the default page, select the button `Add Data` or alternatively select the plug icon on the left sidebar
+- The 'Select your data source' page will populate for you to choose your database type. For this tutorial we will be selecting the postgres database button.
+
+![db](/assets/sql/tutorials/process-quality/database.png)
+
+- Once you have selected the database type,the page will automatically navigate to the SQL Editor where the syntax to create a database connection will automatically populate for you to enter the required parameters.
+
+The required parameters are:
+
+- CREATE DATABASE display_name  --- display name for database. 
+- WITH ENGINE = "postgres",     --- name of the mindsdb handler 
+- PARAMETERS = {
+    - "user": " ",              --- Your database user.
+    - "password": " ",          --- Your password.
+    - "host": " ",              --- host, it can be an ip or an url. 
+    - "port": "5432",           --- common port is 5432.
+    - "database": " "           --- The name of your database *optional.
+}
+
+![integration](/assets/sql/tutorials/process-quality/dbintegration.png)
+
+Select the `Run` button or Shift+Enter to execute the syntax. Once the Database connection is created the console will display a message 'Query successfully completed'.
+
+Once the database integration is successful we can query the table from the database to ensure the data pulls through on MindsDB.
+
+The syntax to use is:
 
 ```sql
-SELECT * from files.file_name;
+SELECT * FROM database.datasource.table;
+```
+Example:
+
+```sql
+SELECT * FROM mindsdb_prediction.data.process_quality;
 ```
 
 ## Connect to MindsDB SQL Sever
@@ -57,7 +86,7 @@ Use the following query to create a Predictor that will foretell the silica_conc
 > The row number is limited to 5000 to speed up training but you can keep the whole dataset.
 ```sql
 CREATE PREDICTOR mindsdb.process_quality_predictor
-FROM files (
+FROM mindsdb.prediction (
     SELECT iron_feed, silica_feed, starch_flow, amina_flow, ore_pulp_flow,
            ore_pulp_ph, ore_pulp_density,flotation_column_01_air_flow,
            flotation_column_02_air_flow, flotation_column_03_air_flow,
